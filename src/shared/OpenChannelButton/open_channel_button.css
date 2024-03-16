@@ -1,7 +1,10 @@
 .open-channel-button {
-  display: inline-block;
-  text-decoration: none;
+  justify-content: center;
+  display: inline-flex;
+  align-items: center;
+  text-align: center;
   padding: 8px 5px;
+  text-decoration: none;
   border: 3px solid rgb(0, 136, 204);
   border-radius: 15px;
   color: rgb(0, 136, 204);
@@ -9,7 +12,11 @@
   font-size: 14px;
   font-weight: 700;
   line-height: 16px;
-  text-align: left;
+}
+
+.open-channel-button > * {
+  width: fit-content;
+  height: fit-content;
 }
 
 .open-channel-button-filled {

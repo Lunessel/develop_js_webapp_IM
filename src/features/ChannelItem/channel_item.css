@@ -1,0 +1,32 @@
+.channel-item {
+  padding: 12px 15px;
+  border-radius: 10px;
+  width: fit-content;
+  background: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.channel-item .channel-item__low-section {
+  display: flex;
+}
+.channel-item .channel-item__low-section > .channel-item__low-section__open {
+  padding: 8px 0 0 8px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 8px;
+}
+.channel-item .channel-item__low-section > .channel-item__low-section__open > .open-channel-button {
+  height: calc(50% - 4px);
+}
+.channel-item .channel-description {
+  padding-bottom: 5px;
+  border-bottom: 1px solid rgb(217, 217, 217);
+}
+.channel-item .channel-statistics {
+  padding: 8px 8px 0 0;
+  border-right: 1px solid rgb(217, 217, 217);
+}
+
+/*# sourceMappingURL=channel_item.css.map */

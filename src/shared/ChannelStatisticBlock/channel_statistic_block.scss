@@ -1,0 +1,41 @@
+.channel-statistic-block {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  //row-gap: 10px;
+  background:linear-gradient(#D9D9D9,#D9D9D9) center/1px 100% no-repeat;
+
+  box-sizing: border-box;
+  border: 1px solid rgb(217, 217, 217);
+  border-radius: 18px;
+  padding: 6px 12px;
+
+
+  & > h5 {
+    color: rgb(104, 104, 104);
+    font-family: Roboto, serif;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 15px;
+    text-align: center;
+  }
+
+  & > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  & > *:nth-child(-n + 2) {
+    padding-bottom: 5px;
+    border-bottom: rgb(217, 217, 217) 1px solid;
+  }
+
+  & > *:not(:nth-child(-n + 2)) {
+    padding-top: 5px;
+  }
+
+  & > *:nth-child(even) {
+    padding-left: 16px;
+  }
+}
+
