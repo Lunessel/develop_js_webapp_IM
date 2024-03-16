@@ -2,14 +2,15 @@ import './App.css';
 import {useEffect} from "react";
 import eruda from "eruda";
 import AdminProfilePage from "../pages/AdminProfilePage/AdminProfilePage";
-// const tg = window.Telegram.WebApp;
+const tg = window.Telegram.WebApp;
 
 
 function App() {
 
-    // useEffect(() => {
-    //     tg.ready();
-    // }, []);
+    useEffect(() => {
+        tg.expand()
+        tg.ready();
+    }, []);
     // const onClose = () => {
     //     tg.close();
     // }
