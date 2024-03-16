@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useEffect, useRef, useState} from 'react';
 
 import './navigation.scss'
 
@@ -21,20 +21,32 @@ const Navigation = () => {
         }
         setIsMenuClicked(!isMenuClicked)
     }
+    let menuRef = useRef();
+    let burgermenuRef = useRef();
 
+    useEffect(() => {
+        let handler = (e) => {
+            if (!menuRef.current.contains(e.target) && !burgermenuRef.current.contains(e.target)) {
+                setBurgerClass("burger-bar unclicked")
+                setMenuClass("menu hidden")
+                setIsMenuClicked(false)
+            }
+        }
 
+        document.addEventListener("mousedown", handler)
+    }, []);
     return (
 
         <>
             <nav>
-                <div className="burger-menu" onClick={updateMenu}>
+                <div className="burger-menu" onClick={updateMenu} ref={burgermenuRef}>
                     <div className={burger_class} ></div>
                     <div className={burger_class} ></div>
                     <div className={burger_class} ></div>
                 </div>
             </nav>
 
-            <div className={menu_class}>
+            <div className={menu_class} ref={menuRef}>
                 <p>1</p>
                 <p>1</p>
                 <p>1</p>
