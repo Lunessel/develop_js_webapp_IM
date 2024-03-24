@@ -1,0 +1,21 @@
+.channel-format-item {
+  box-sizing: border-box;
+  border: 2px solid rgb(97, 97, 101);
+  border-radius: 10px;
+  padding: 8px 15px;
+  width: fit-content;
+  height: fit-content;
+  color: rgb(97, 97, 101);
+  font-family: Roboto, serif;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 16px;
+  text-align: left;
+}
+
+.active-channel-format-item {
+  color: rgb(255, 255, 255);
+  background: rgb(97, 97, 101);
+}
+
+/*# sourceMappingURL=channel_format_item.css.map */

@@ -1,0 +1,17 @@
+.channel-formats {
+  display: flex;
+  row-gap: 5px;
+
+  .channel-formats__variants {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+  }
+
+  .channel-formats__price {
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+  }
+
+}

@@ -9,6 +9,7 @@ const AdminProfilePage = () => {
         <div className={"admin-page"}>
             <Navigation />
             <ChannelItem />
+            <ChannelItem />
         </div>
     );
 };

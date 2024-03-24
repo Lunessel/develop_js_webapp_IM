@@ -1,0 +1,15 @@
+.channel-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 20px;
+}
+.channel-page > * {
+  padding: 12px 15px;
+  border-radius: 10px;
+  background: rgb(255, 255, 255);
+  width: 80%;
+}
+
+/*# sourceMappingURL=channel_page.css.map */

@@ -1,0 +1,14 @@
+.channel-slick-calendar {
+  .slick-slide > div > div > *{
+    background-color: bisque;
+    display: flex;
+    //flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .slick-current {
+    color: red;
+    font-size: 40px;
+  }
+}
