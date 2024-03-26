@@ -1,6 +1,7 @@
 import React, {useEffect, useRef, useState} from 'react';
 
 import './navigation.scss'
+import {Link} from "react-router-dom";
 
 const Navigation = () => {
 
@@ -47,9 +48,7 @@ const Navigation = () => {
             </nav>
 
             <div className={menu_class} ref={menuRef}>
-                <p>1</p>
-                <p>1</p>
-                <p>1</p>
+                <Link to={'/'} onClick={updateMenu}>My channels</Link>
             </div>
         </>
     );

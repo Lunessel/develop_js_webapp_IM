@@ -12,14 +12,15 @@
   .channel-item__low-section {
     display: flex;
 
-    & > .channel-item__low-section__open {
+    .channel-item__low-section__open {
       padding: 8px 0 0 8px;
       display: flex;
       flex-direction: column;
       row-gap: 8px;
 
-      & > .open-channel-button {
-        height: calc(50% - 4px)
+      .open-channel-button {
+        height: 50px;
+        width: 100%;
       }
     }
   }

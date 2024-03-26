@@ -38,7 +38,7 @@ nav {
   height: 4px;
   background-color: rgb(0, 183, 255);
   border-radius: 0.5em;
-  z-index: 10;
+  z-index: 1000;
 }
 
 .menu {
@@ -48,6 +48,7 @@ nav {
   position: absolute;
   top: 0;
   left: 0;
+  z-index: 100;
 }
 
 /* ------------- sliding menu ------------------ */

@@ -7,9 +7,8 @@ import './admin_profile_page.scss'
 const AdminProfilePage = () => {
     return (
         <div className={"admin-page"}>
-            <Navigation />
-            <ChannelItem />
-            <ChannelItem />
+            <ChannelItem channel_id={1}/>
+            <ChannelItem channel_id={2}/>
         </div>
     );
 };

@@ -11,14 +11,15 @@
 .channel-item .channel-item__low-section {
   display: flex;
 }
-.channel-item .channel-item__low-section > .channel-item__low-section__open {
+.channel-item .channel-item__low-section .channel-item__low-section__open {
   padding: 8px 0 0 8px;
   display: flex;
   flex-direction: column;
   row-gap: 8px;
 }
-.channel-item .channel-item__low-section > .channel-item__low-section__open > .open-channel-button {
-  height: calc(50% - 4px);
+.channel-item .channel-item__low-section .channel-item__low-section__open .open-channel-button {
+  height: 50px;
+  width: 100%;
 }
 .channel-item .channel-description {
   padding-bottom: 5px;
