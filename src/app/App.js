@@ -3,11 +3,18 @@ import {useEffect} from "react";
 import eruda from "eruda";
 import AdminProfilePage from "../pages/AdminProfilePage/AdminProfilePage";
 import {Helmet} from "react-helmet";
+import { useCookies } from 'react-cookie'
 import ChannelPage from "../pages/ChannelPage/ChannelPage";
 const tg = window.Telegram.WebApp;
 
 
 function App() {
+    const [cookies, setCookie] = useCookies(['access_token', 'refresh_token'])
+    alert(cookies)
+    let expires = new Date()
+    expires.setTime(expires.getTime() + (Date() * 1000))
+    setCookie('access_token', 'hello', { path: '/',  expires})
+    setCookie('refresh_token', 'world', {path: '/', expires})
 
     useEffect(() => {
         tg.expand()
