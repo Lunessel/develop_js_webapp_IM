@@ -9,13 +9,13 @@ const tg = window.Telegram.WebApp;
 
 
 function App() {
-    const [cookies, setCookie] = useCookies(['access_token', 'refresh_token'])
+    const [cookies, setCookie] = useCookies(['access_token_h', 'refresh_token_hi'])
     // alert(cookies)
     console.log(cookies)
     let expires = new Date()
     expires.setTime(expires.getTime() + 1000000)
-    setCookie('access_token', 'hello', { path: '/',  expires})
-    setCookie('refresh_token', 'world', {path: '/', expires})
+    setCookie('access_token_hi', 'hello', { path: '/',  expires})
+    setCookie('refresh_token_hi', 'world', {path: '/', expires})
 
     useEffect(() => {
         tg.expand()
@@ -30,13 +30,13 @@ function App() {
 
     eruda.init({
         container: el,
-        tool: ['console', 'elements']
+        tool: ['console', 'elements', 'application']
     });
     // console.log("initData")
     // console.log(tg.initData)
     //
-    console.log("initDataUnsafe")
-    console.log(tg.initDataUnsafe)
+    // console.log("initDataUnsafe")
+    // console.log(tg.initDataUnsafe)
     // console.log("tg")
     // console.log(tg)
 
