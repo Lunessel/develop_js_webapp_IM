@@ -20,22 +20,22 @@ function App() {
         tg.expand()
         tg.ready();
     }, []);
-    // const onClose = () => {
-    //     tg.close();
-    // }
-    //
-    // let el = document.createElement('div');
-    // document.body.appendChild(el);
-    //
-    // eruda.init({
-    //     container: el,
-    //     tool: ['console', 'elements']
-    // });
+    const onClose = () => {
+        tg.close();
+    }
+
+    let el = document.createElement('div');
+    document.body.appendChild(el);
+
+    eruda.init({
+        container: el,
+        tool: ['console', 'elements']
+    });
     // console.log("initData")
     // console.log(tg.initData)
     //
-    // console.log("initDataUnsafe")
-    // console.log(tg.initDataUnsafe)
+    console.log("initDataUnsafe")
+    console.log(tg.initDataUnsafe)
     // console.log("tg")
     // console.log(tg)
 
