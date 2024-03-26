@@ -1,0 +1,22 @@
+.calendar-day {
+  padding: 10px 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  row-gap: 8px;
+  background: rgb(255, 255, 255);
+  border-radius: 10px;
+  width: fit-content;
+  min-height: 332px;
+
+  & > h3 {
+    color: rgb(0, 0, 0);
+    font-family: Roboto, serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    text-align: center;
+    //margin-top: 8px;
+  }
+}

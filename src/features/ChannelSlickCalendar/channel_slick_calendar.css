@@ -1,12 +1,19 @@
-.channel-slick-calendar .slick-slide > div > div > * {
-  background-color: bisque;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.channel-slick-calendar {
+  background: none;
+  width: 90%;
 }
-.channel-slick-calendar .slick-current {
-  color: red;
-  font-size: 40px;
+.channel-slick-calendar .click-track {
+  display: flex;
+  column-gap: 50px;
+}
+.channel-slick-calendar .slick-current .calendar-day {
+  border: 5px solid;
+  border-radius: 10px;
+  border-image: linear-gradient(224.42deg, rgb(220, 254, 83) 0.799%, rgb(245, 130, 255) 35.635%, rgb(55, 243, 255) 66.768%, rgb(171, 125, 218) 100%) 1 round;
+}
+.channel-slick-calendar .slick-current h3 {
+  color: #29ff29;
+  font-size: 20px;
 }
 
 /*# sourceMappingURL=channel_slick_calendar.css.map */

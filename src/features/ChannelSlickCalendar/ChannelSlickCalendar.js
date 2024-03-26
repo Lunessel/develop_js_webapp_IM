@@ -4,39 +4,37 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import './channel_slick_calendar.scss'
+import CalendarDay from "../CalendarDay/CalendarDay";
 
 const ChannelSlickCalendar = () => {
     var settings = {
-        dots: true,
-        infinite: true,
-        speed: 500,
-        slidesToShow: 3,
-        slidesToScroll: 1,
+        className: "channel-slick-calendar",
         centerMode: true,
-        // centerPadding: '60px',
+        infinite: true,
+        centerPadding: "60px",
+        connectEnd:true,
+        slidesToShow: 1,
+        speed: 500,
+        dots: true,
         focusOnSelect: true,
-        className: 'channel-slick-calendar'
+        arrows: false
+
+
     };
     return (
         <Slider {...settings}>
-            <div>
-                <div>1</div>
-            </div>
-            <div>
-                <h3>2</h3>
-            </div>
-            <div>
-                <h3>3</h3>
-            </div>
-            <div>
-                <h3>4</h3>
-            </div>
-            <div>
-                <h3>5</h3>
-            </div>
-            <div>
-                <h3>6</h3>
-            </div>
+            {/*<div>*/}
+            {/*    <div>1</div>*/}
+            {/*</div>*/}
+            {/*<div>*/}
+            {/*    <h3>2</h3>*/}
+            {/*</div>*/}
+            <CalendarDay bg_color={'lightblue'}/>
+            <CalendarDay bg_color={'red'}/>
+            <CalendarDay bg_color={'black'}/>
+            <CalendarDay bg_color={'yellow'}/>
+            <CalendarDay bg_color={'purple'}/>
+
         </Slider>
     );
 };
