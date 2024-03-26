@@ -1,5 +1,5 @@
 .calendar-day {
-  padding: 10px 15px;
+  padding: 10px 10px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;

@@ -11,13 +11,39 @@ const ChannelSlickCalendar = () => {
         className: "channel-slick-calendar",
         centerMode: true,
         infinite: true,
-        centerPadding: "65px",
+        // centerPadding: "94px",
         connectEnd:true,
         slidesToShow: 1,
         speed: 500,
         dots: true,
         focusOnSelect: true,
-        arrows: false
+        arrows: false,
+        responsive: [
+            {
+                breakpoint: 380,
+                settings: {
+                    centerPadding: "85px",
+                }
+            },
+            {
+                breakpoint: 410,
+                settings: {
+                    centerPadding: "92px",
+                }
+            },
+            {
+                breakpoint: 425,
+                settings: {
+                    centerPadding: "103px",
+                }
+            },
+            {
+                breakpoint: 450,
+                settings: {
+                    centerPadding: "110px",
+                }
+            }
+        ]
 
 
     };

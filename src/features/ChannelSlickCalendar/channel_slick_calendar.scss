@@ -1,10 +1,17 @@
 .channel-slick-calendar {
+  box-sizing: border-box;
   background: none;
-  width: 90%;
+  width: 100%;
+  padding: 0;
 
-  .click-track {
-    display: flex;
-    column-gap: 50px;
+  //.click-track {
+  //  transform: translate3d(-400px, 0px, 0px);
+  //
+  //}
+
+  .slick-slide > div{
+    width: 230px;
+
   }
 
   //width: max-content;
