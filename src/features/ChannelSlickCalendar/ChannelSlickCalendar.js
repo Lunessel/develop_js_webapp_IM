@@ -11,7 +11,7 @@ const ChannelSlickCalendar = () => {
         className: "channel-slick-calendar",
         centerMode: true,
         infinite: true,
-        centerPadding: "60px",
+        centerPadding: "65px",
         connectEnd:true,
         slidesToShow: 1,
         speed: 500,
