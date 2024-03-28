@@ -49,6 +49,7 @@ const Navigation = () => {
 
             <div className={menu_class} ref={menuRef}>
                 <Link to={'/'} onClick={updateMenu}>My channels</Link>
+                <Link to={'/register_channel'} onClick={updateMenu}>register_channel</Link>
             </div>
         </>
     );

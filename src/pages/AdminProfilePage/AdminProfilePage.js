@@ -1,5 +1,5 @@
 import React from 'react';
-import ChannelItem from "../../features/ChannelItem/ChannelItem";
+import ChannelCard from "../../features/ChannelCard/ChannelCard";
 import Navigation from "../../features/Navigation/Navigation";
 
 import './admin_profile_page.scss'
@@ -7,8 +7,8 @@ import './admin_profile_page.scss'
 const AdminProfilePage = () => {
     return (
         <div className={"admin-page"}>
-            <ChannelItem channel_id={1}/>
-            <ChannelItem channel_id={2}/>
+            <ChannelCard channel_id={1}/>
+            <ChannelCard channel_id={2}/>
         </div>
     );
 };

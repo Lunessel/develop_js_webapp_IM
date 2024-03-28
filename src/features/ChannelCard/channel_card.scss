@@ -1,4 +1,4 @@
-.channel-item {
+.channel-card {
   padding: 12px 15px;
   border-radius: 10px;
   width: fit-content;
@@ -9,10 +9,10 @@
   align-items: center;
 
 
-  .channel-item__low-section {
+  .channel-card__low-section {
     display: flex;
 
-    .channel-item__low-section__open {
+    .channel-card__low-section__open {
       padding: 8px 0 0 8px;
       display: flex;
       flex-direction: column;

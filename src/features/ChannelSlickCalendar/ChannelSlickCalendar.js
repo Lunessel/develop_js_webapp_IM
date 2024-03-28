@@ -4,7 +4,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import './channel_slick_calendar.scss'
-import CalendarDay from "../CalendarDay/CalendarDay";
+import CalendarDay from "../../entities/CalendarDay/CalendarDay";
 
 const ChannelSlickCalendar = () => {
     var settings = {

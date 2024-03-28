@@ -2,6 +2,8 @@ import React from 'react';
 import Navigation from "../../features/Navigation/Navigation";
 import {Link, Outlet} from "react-router-dom";
 
+import './layout.scss'
+
 const Layout = () => {
     return (
         <>

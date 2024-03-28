@@ -3,15 +3,15 @@ import ChannelDescription from "../../entities/ChannelDescription/ChannelDescrip
 import ChannelStatistics from "../../entities/ChannelStatistics/ChannelStatistics";
 import OpenChannelButton from "../../shared/OpenChannelButton/OpenChannelButton";
 
-import "./channel_item.scss"
+import "./channel_card.scss"
 import {Link} from "react-router-dom";
-const ChannelItem = ({channel_id}) => {
+const ChannelCard = ({channel_id}) => {
     return (
-        <div className={"channel-item"}>
+        <div className={"channel-card"}>
             <ChannelDescription />
-            <div className={"channel-item__low-section"}>
+            <div className={"channel-card__low-section"}>
                 <ChannelStatistics />
-                <div className={"channel-item__low-section__open"}>
+                <div className={"channel-card__low-section__open"}>
                     <Link to={`channels/${channel_id}`}>
                         <OpenChannelButton text={"Редагувати"} is_filled={false}/>
                     </Link>
@@ -24,4 +24,4 @@ const ChannelItem = ({channel_id}) => {
     );
 };
 
-export default ChannelItem;
+export default ChannelCard;

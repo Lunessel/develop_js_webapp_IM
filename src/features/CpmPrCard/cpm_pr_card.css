@@ -1,0 +1,67 @@
+.cpm-pr-card {
+  background: none;
+  display: flex;
+  justify-content: space-between;
+}
+.cpm-pr-card > div {
+  width: 48%;
+}
+.cpm-pr-card > div > div {
+  border-radius: 10px;
+  background: rgb(255, 255, 255);
+  min-height: 55px;
+}
+.cpm-pr-card .block {
+  display: flex;
+  flex-direction: column;
+  row-gap: 7px;
+}
+.cpm-pr-card .block > div {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 15px;
+}
+.cpm-pr-card .block > div > div {
+  border: 1px solid rgb(104, 104, 104);
+  border-radius: 2px;
+  padding: 5px 8px;
+}
+.cpm-pr-card .block input {
+  border: none;
+  width: 50%;
+}
+.cpm-pr-card .block input:focus {
+  outline: none;
+}
+.cpm-pr-card .block h5 {
+  color: rgb(104, 104, 104);
+  font-family: Roboto, serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 19px;
+  text-align: left;
+}
+.cpm-pr-card .pr > div {
+  justify-content: space-evenly;
+  align-items: center;
+}
+.cpm-pr-card .pr input {
+  width: 30px;
+  height: 30px;
+}
+.cpm-pr-card input::-webkit-outer-spin-button,
+.cpm-pr-card input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.cpm-pr-card h4 {
+  color: rgb(97, 97, 101);
+  font-family: Roboto, serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 14px;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+/*# sourceMappingURL=cpm_pr_card.css.map */

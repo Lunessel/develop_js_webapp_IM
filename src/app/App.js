@@ -7,6 +7,7 @@ import { useCookies } from 'react-cookie'
 import ChannelPage from "../pages/ChannelPage/ChannelPage";
 import {BrowserRouter, Route, Routes} from "react-router-dom";
 import Layout from "../pages/Layout/Layout";
+import RegisterChannelPage from "../pages/RegisterChannelPage/RegisterChannelPage";
 const tg = window.Telegram.WebApp;
 
 
@@ -46,6 +47,7 @@ function App() {
                 <Route path={'/'} element={<Layout />}>
                     <Route index element={<AdminProfilePage />}/>
                     <Route path={'channels/:id'} element={<ChannelPage />}/>
+                    <Route path={'register_channel'} element={<RegisterChannelPage />}/>
 
                 </Route>
             </Routes>

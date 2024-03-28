@@ -1,0 +1,84 @@
+.cpm-pr-card {
+  background: none;
+  display: flex;
+  justify-content: space-between;
+
+  & > div {
+    width: 48%;
+
+
+    & > div {
+      border-radius: 10px;
+      background: rgb(255, 255, 255);
+      min-height: 55px;
+
+    }
+  }
+
+  .block {
+    //padding: 12px 15px;
+
+    display: flex;
+    flex-direction: column;
+    row-gap: 7px;
+
+    & > div {
+      display: flex;
+      justify-content: space-between;
+      padding: 12px 15px;
+
+
+      & > div {
+        border: 1px solid rgb(104, 104, 104);
+        border-radius: 2px;
+        padding: 5px 8px;
+      }
+    }
+
+    input {
+      border: none  ;
+      width: 50%;
+    }
+    input:focus {
+      outline: none;
+    }
+
+    h5 {
+      color: rgb(104, 104, 104);
+      font-family: Roboto, serif;
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 19px;
+      text-align: left;
+    }
+  }
+
+  .pr {
+    & > div {
+      justify-content: space-evenly;
+      align-items: center;
+    }
+
+    input {
+      width: 30px;
+      height: 30px;
+    }
+  }
+
+
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+
+  h4 {
+    color: rgb(97, 97, 101);
+    font-family: Roboto, serif;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14px;
+    text-align: left;
+    text-transform: uppercase;
+  }
+}
